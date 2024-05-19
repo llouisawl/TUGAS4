@@ -1,0 +1,777 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 111;
+  transition: 0.5s ease;
+}
+
+.navbar.sticky {
+  padding: 6px 60px;
+  background: whitesmoke;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.navbar.sticky .logo {
+  font-size: 1.5em;
+  color: palevioletred;
+}
+
+.navbar.sticky ol li a {
+  font-size: 15px;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: palevioletred;
+}
+
+ol {
+  display: flex;
+  margin: auto 0;
+}
+
+ol li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+ol li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: lightpink;
+}
+
+ol li:hover a {
+  color: palevioletred;
+}
+
+.view {
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+}
+
+.Home {
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  width: 105%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.cols {
+  width: 100%;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: pink;
+}
+
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: lightpink;
+}
+
+h1 {
+  display: block;
+  font-size: 4em;
+  font-weight: 900;
+  color: palevioletred;
+}
+
+h1 span {
+  color: lightpink;
+}
+
+.multitext {
+  color: lightpink;
+  text-transform: capitalize;
+}
+
+p {
+  display: block;
+  width: 90%;
+  font-size: 0.9em;
+  color: black;
+  text-align: justify;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  position: relative;
+  height: 100%;
+  width: 85%;
+  top: 10px;
+  right: 60px;
+  animation: animateUser 6s linear infinite;
+}
+
+@keyframes animateUser {
+  50% {
+    right: 60px;
+    top: -10px;
+  }
+}
+
+.image #Bola {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 90%;
+  animation: object1 6s linear infinite;
+}
+
+@keyframes object1 {
+  50% {
+    right: 40px;
+    top: 180px;
+  }
+}
+
+.image #Kupu {
+  position: absolute;
+  top: 20%;
+  left: -40%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  width: 100%;
+  z-index: -1;
+  animation: object2 8s linear infinite;
+}
+
+@keyframes object2 {
+  50% {
+    left: -110%;
+    top: 50%;
+  }
+}
+
+.image #Love {
+  position: absolute;
+  top: 80%;
+  right: 105%;
+  transform: translate(-50%, -50%) rotate(-22deg);
+  width: 100%;
+  animation: object3 6s linear infinite;
+}
+
+@keyframes object3 {
+  50% {
+    right: 105%;
+    top: 84%;
+  }
+}
+
+.image #Gelombang {
+  position: absolute;
+  top: 90%;
+  left: -17%;
+  transform: translate(-50%, -50%);
+  width: 233%;
+  z-index: 1;
+  animation: object4 5s linear infinite;
+}
+@keyframes object4 {
+  50% {
+    top: 91%;
+  }
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.main h2 {
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+  color: pink;
+}
+
+span {
+  color: deeppink;
+}
+
+.main h2::before {
+  position: absolute;
+  content: "";
+  background: deeppink;
+  height: 3px;
+  width: 30%;
+  right: -15px;
+  bottom: 0;
+  border-radius: 50px;
+}
+
+.main h6 {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+.Gallery .content {
+  flex-wrap: wrap;
+}
+
+.Gallery .content .frame {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Gallery .content .frame .box {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Gallery .content .frame .box img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: 0.2s ease-in;
+}
+
+.Gallery .content .frame .box:hover img {
+  filter: brightness(100%);
+  transform: scale(1.08);
+}
+
+.Gallery .content .frame .title {
+  font-weight: 800;
+  color: palevioletred;
+  padding: 5px 0;
+}
+
+.Gallery .content .frame p {
+  font-size: 0.6em;
+  color: black;
+}
+
+.Blog .content {
+  flex-direction: column;
+}
+
+.Blog .content .row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 20 px 0;
+  justify-content: center;
+}
+
+.Blog .content .row:nth-child(odd) .a {
+  order: 2;
+}
+.Blog .content .row .colss {
+  position: relative;
+  width: 600px;
+  padding: 20px 50px;
+}
+
+.Blog .content .row .colss .heading {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: palevioletred;
+}
+
+a {
+  color: lightcoral;
+  font-size: 0.7em;
+}
+
+.Blog .content .row .colss .boxes {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Blog .content .row .colss .boxes img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Contact {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.contact {
+  padding: 40px;
+  background: pink;
+  box-shadow: 0 5px 35 px rgba(0, 0, 0, 0.5);
+}
+
+.map {
+  grid-area: map;
+}
+
+.kotak {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas:
+    "form info"
+    "form map";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.contact h3 {
+  color: palevioletred;
+  font-weight: 900;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.formbox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formbox .row100 .inputbox {
+  width: 100%;
+}
+
+.inputbox span1 {
+  color: palevioletred;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.inputbox span2 {
+  color: green;
+  font-weight: 500;
+  margin-top: -5%;
+  margin-left: 20%;
+  display: none;
+}
+
+.inputbox input {
+  padding: 10px;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.inputbox textarea {
+  padding: 10px;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid black;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.inputbox input[type="submit"] {
+  background: palevioletred;
+  color: aliceblue;
+  border: none;
+  font-size: 1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+.inputbox input[type="submit"]:hover {
+  background: hotpink;
+}
+
+.inputbox::placeholder {
+  color: grey;
+}
+
+.info {
+  background: palevioletred;
+}
+
+.info h3 {
+  color: ghostwhite;
+  font-weight: 900;
+}
+
+.info .infobox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info .infobox div span {
+  min-width: 40px;
+  height: 40px;
+  color: white;
+  background: #ffb6c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info .infobox div p {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.info .infobox div a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.info .infobox div a:hover {
+  color: lightpink;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.sci li a {
+  color: aliceblue;
+  font-size: 2em;
+}
+
+.sci li a:hover {
+  color: pink;
+}
+
+.map {
+  padding: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  text-transform: capitalize;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.copyright a {
+  color: palevioletred;
+  text-decoration: none;
+  margin: 0 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.content .popup-image span {
+  position: absolute;
+  top: 6%;
+  right: 28%;
+  font-size: 50px;
+  font-weight: 20px;
+  color: pink;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.content .popup-image img {
+  position: absolute;
+  top: 54%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 60px;
+  }
+  .navbar ol {
+    display: none;
+  }
+
+  .navbar ol.active {
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 60px);
+  }
+
+  .navbar ol.active li {
+    margin: 8px;
+  }
+
+  .navbar ol.active li a {
+    font-size: 25px;
+  }
+  .navbar .toggle {
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+    cursor: pointer;
+    background: url(menubar.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar .toggle.active {
+    background: url(close.png);
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .main h2 {
+    font-size: 1.5em;
+  }
+
+  .main h6 {
+    font-size: 0.9em;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
+  .copyright a {
+    font-size: 16px;
+  }
+
+  .Home {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 70vw;
+    margin-top: 7.5rem;
+    left: 60px;
+  }
+
+  .image #Bola {
+    width: 90%;
+    height: 93vw;
+    left: 50%;
+  }
+
+  .image #Gelombang {
+    width: 110%;
+    height: 65vw;
+    left: 50%;
+    margin-top: -1rem;
+  }
+
+  .image #Love {
+    width: 68%;
+    height: 55vw;
+    left: 25%;
+    margin-top: 19rem;
+  }
+
+  .wrapper {
+    order: 2;
+    margin-top: -17rem;
+    margin-left: 9rem;
+  }
+
+  .topline {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .multitext {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .Blog .content .row {
+    flex-direction: column;
+  }
+
+  .Blog .content .row .colss {
+    width: 100%;
+  }
+
+  .Blog .content .row:nth-child(odd) .a {
+    order: 0;
+  }
+
+  .Blog .content .row .colss .heading {
+    font-size: 1.1em;
+  }
+
+  .Blog .content .row .colss p {
+    font-size: 14px;
+  }
+
+  .Blog .content .row .colss .boxes {
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    right: 14px;
+  }
+
+  .Blog .content .row .colss .boxes img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .Contact {
+    padding: 20px;
+  }
+
+  .kotak {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "form"
+      "info"
+      "map";
+  }
+
+  .contact {
+    padding: 30px;
+  }
+
+  .map {
+    min-height: 300px;
+    padding: 0;
+  }
+
+  .formbox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .inputbox {
+    width: 100%;
+  }
+}
